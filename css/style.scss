@@ -265,4 +265,57 @@ $black: #282B3A;
         height: 150px;
     }
 
+
+    #blog {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        
+        h2 {
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
+            color: black;
+            margin-bottom: -100px;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            box-shadow: 0px 0px 15px 0px #000000;
+            height: 18%;
+            margin-bottom: 10px;
+
+            & img {
+                width: 100%;
+                height: 50%;
+            }
+
+            & div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                width: 100%;
+                font-family: 'Lato', sans-serif;
+                color: black;
+
+                & h3 {
+                    margin: 0;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+
+                & p {
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
 }
