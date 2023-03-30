@@ -1,0 +1,141 @@
+// NORMALISE //
+
+* {box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+body {
+	font-size: 1.8rem;
+	line-height: 2;
+	margin: 0;
+	color: #6a5c6b;
+	background-image: url(../img/fond.svg);
+	background-attachment: fixed;
+}
+
+a {text-decoration: none;}
+
+img {max-width: 100%;}
+
+ul {
+	padding : 0;
+	list-style: none;
+}
+
+// NORMALISE //
+
+
+$orange: #EB734E;
+$blue: #465268;
+$black: #282B3A;
+
+
+@media screen and (max-width: 650px) {
+    
+    body {
+        height: 100vh;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin: 0;
+    }
+
+    header {
+        background-color: #465268;
+        color: white;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & h1 {
+            font-family: 'Righteous', cursive;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        & h1::before {
+            content: '"';
+            color: $orange;
+        }
+
+        & h1::after {
+            content: '"';
+            color: $orange;
+        }
+
+        & div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        nav {
+            width: 50%;
+            height: 100%;
+
+            & ul {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin: 0;
+
+                & li {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    & a {
+                        width: 25%;
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 90%;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+
+                    // #link_plats {
+                    //     width: 25%;
+                    // }
+
+                    // #link_blog {
+                    //     width: 25%;
+                    // }
+
+                    // #link_contact {
+                    //     width: 25%;
+                    // }
+            
+                    // & a:hover {
+                    //     background-color: $orange;
+                    //     cursor: pointer;
+                    //     padding: 1% 20%;
+                    // }
+                }
+
+                // & li:hover {
+                //     background-color: $orange;
+                //     cursor: pointer;
+                //     // padding: 1% 5% 1% 2%;
+                //     // padding: 1% 1%;
+                // }
+            }
+        }
+
+        button {
+            color: white;
+            background-color: $black;
+            padding: 2%;
+            border-radius: 7px;
+            border: 1px solid white;
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
+        }
+    }
+
+}
