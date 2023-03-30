@@ -215,7 +215,7 @@ $black: #282B3A;
 
             & article {
                 width: 90%;
-                height: 17%;
+                height: 18%;
                 display: flex;
                 font-family: 'Lato', sans-serif;
                 margin: 0;
@@ -228,7 +228,7 @@ $black: #282B3A;
                 }
                 & img {
                     width: 155px;
-                    height: 195px;
+                    height: 198px;
                     border-radius: 10px;
                     margin: 0;
                 }
@@ -253,6 +253,16 @@ $black: #282B3A;
                 border-radius: 10px;
             }
         }
+    }
+
+    #parallax {
+        background-image: url(../img/img-12.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 90%;
+        height: 150px;
     }
 
 }
