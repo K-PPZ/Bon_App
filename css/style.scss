@@ -35,6 +35,7 @@ $black: #282B3A;
     body {
         height: 100vh;
         display: flex;
+        flex-direction: column;
         // justify-content: center;
         // align-items: center;
         margin: 0;
@@ -135,6 +136,65 @@ $black: #282B3A;
             border: 1px solid white;
             text-transform: uppercase;
             font-family: 'Lato', sans-serif;
+        }
+    }
+
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        & #tableau {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            & h2 {
+                text-transform: uppercase;
+                font-family: 'Lato', sans-serif;
+                color: black;
+                margin: 0;
+            }
+
+            & table {
+                width: 90%;
+                color: white;
+                font-family: 'Lato', sans-serif;
+                border: 2px solid #B7B9B8;
+
+                & thead {
+                    background-color: $blue;
+                    
+                    & th {
+                        text-align: center;
+                        padding: 1% 2%;
+                    }
+                }
+
+                & tbody {
+                    color: black;
+                    
+                    & td {
+                        border: 2px solid #B7B9B8;
+                        text-align: center;
+                        padding: 1% 2%;
+                    }
+                }
+
+                & tfoot {
+                    background-color: $blue;
+
+                    & td {
+                        padding: 1% 2%;
+                    }
+                }
+            }
         }
     }
 
