@@ -178,7 +178,80 @@
     </main>
 
     <footer>
+      <form action="#">
+        <h2>formulaire de contact</h2>
 
+        <p>Pour plus de details vous pouvez consultez notre site <a href="#">ici</a></p>
+        
+        <div id="infos_contact">
+          <h2>informations de contact</h2>
+
+          <fieldset id="fieldset_age">
+            <legend>Quel est votre age</legend>
+
+            <div>
+              <input type="radio" name="age" id="input_12_14">
+              <label for="label_12_14">12 - 14</label>
+            </div>
+
+            <div>
+              <input type="radio" name="age" id="input_15_17">
+              <label for="label_15_17">15 - 17</label>
+            </div>
+
+            <div>
+              <input type="radio" name="age" id="input_18_19">
+              <label for="label_18_19">18 - 19</label>
+            </div>
+          </fieldset>
+
+          <div id="container_name">
+            <label for="label_name">nom :</label>
+            <input type="text" name="name" id="input_name" placeholder="Saisissez votre nom">
+          </div>
+
+          <div id="container_mail">
+            <label for="label_mail">mail :</label>
+            <input type="email" name="mail" id="input_mail" placeholder="Saisissez votre mail">
+          </div>
+        </div>
+
+        <div id="favorite_games">
+          <h2>votre jeu préféré</h2>
+
+          <div id="container_console">
+            <label for="selected_console">Choisissez une console :</label>
+            <select name="selected_console" id="select_console">
+              <option disabled hidden selected>--Choisissez une console--</option>
+              <option value="ps">PS</option>
+              <option value="xbox">Xbox</option>
+            </select>
+          </div>
+          
+          <div id="container_games">
+            <label for="selected_games">Choisissez un jeu :</label>
+            <select name="selected_games" id="select_games">
+              <option disabled hidden selected>--Choisissez un jeu--</option>
+              <option value="cod">COD</option>
+              <option value="gta">GTA</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="container_message">
+          <h2>votre message</h2>
+
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Saisissez votre message"></textarea>
+
+          <div id="container_cryptage">
+            <label for="cryptage">cryptage du message :</label>
+            <input type="password" name="cryptage" id="message_crypter" placeholder="Saisissez votre code">
+          </div>
+
+          <button type="submit">Envoyer votre message</button>
+        </div>
+
+      </form>
     </footer>
 
 
